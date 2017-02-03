@@ -1,0 +1,2 @@
+selenium==3.0.2
+beautifulsoup4==4.5.3
