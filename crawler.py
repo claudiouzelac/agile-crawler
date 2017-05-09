@@ -66,7 +66,8 @@ while present_page < page_count:
                             or "http://plus.google.com/117075062329893756789" in link["href"]:
                         continue
                     agile_row.OutLinks.append(link["href"])
-            print(unicode(agile_row))
+            if "Indiana" in agile_row.Location.lower() or "IN" in agile_row.Location.lower():
+                print(unicode(agile_row))
     present_page = present_page + 1
     next_url = next_url + str(present_page)
     driver.get(next_url)
